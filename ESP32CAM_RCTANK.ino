@@ -213,7 +213,7 @@ void setup()
     ledcWrite(7,10);  // flash led
     delay(200);
     ledcWrite(7,0);
-    delay(200);    
+    delay(200);
   }       
 }
 

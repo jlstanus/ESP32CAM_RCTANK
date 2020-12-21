@@ -10,7 +10,8 @@ int noStop = 0;
 #include "img_converters.h"
 #include "Arduino.h"
 
-#include "dl_lib.h"
+//#include "dl_lib.h"
+#include "dl_lib_matrix3d.h"
 
 typedef struct {
         httpd_req_t *req;
@@ -258,7 +259,7 @@ static esp_err_t cmd_handler(httpd_req_t *req)
         actstate = fwd;     
         ledcWrite(4,speed);  // pin 12
         ledcWrite(3,0);      // pin 13
-        ledcWrite(5,speed);  // pin 14  
+        ledcWrite(5,speed);  // pin 14
         ledcWrite(6,0);      // pin 15   
         delay(200);
       }
